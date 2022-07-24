@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-clr-dark: #1f2937;
+  --bg-clr-light: #fff;
+  --bg-clr-accent: #e5e7eb;
+  --bg-clr-btn: #3882f6;
+
+  --clr-light: #f9faf8;
+  --clr-light-secondary: #e5e7eb;
+  --clr-dark: #1f2937;
+  --clr-dark-secondary: #1f2937;
+
+  --fw-exta-bold: 900;
+  --fw-reg: 400;
+  --fw-bold: 700;
+  --fw-light: 300;
+
+  --ff-primary: "Roboto", sans-serif;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.5rem;
+  --fs-body: 1.125rem;
+}
+
+/* general properties */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-clr-light);
+  color: var(--clr-dark);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  margin: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* typography */
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+.header-logo {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+  color: var(--clr-light);
+}
+
+.section-title {
+  margin-bottom: 0.25em;
+}
+
+.section-subtitle-hero,
+.nav-list-item {
+  color: var(--clr-light-secondary);
+}
+
+/* header section */
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  background: var(--bg-clr-dark);
+}
+
+.nav-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+  color: var(--clr-light-secondary);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* hero section */
+
+.hero {
+  background-color: var(--bg-clr-dark);
+  color: var(--clr-light);
+  margin: 0 auto;
+}
+
+.hero-flex-container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.hero-text {
+  flex-basis: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-img {
+  width: 600px;
+  margin: 0 auto;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.5);
+}
+
+.hero-btn {
+  width: fit-content;
+  background-color: var(--bg-clr-btn);
+  color: var(--bg-clr-light);
+  font-size: var(--fs-body);
+  border-radius: 10px;
+  padding: 0.5em 2em;
+  border: none;
+}
